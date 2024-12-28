@@ -17,10 +17,8 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists*
 
 
-
-
 RUN chmod 744 run_gotty.sh
 
 EXPOSE 8080
 
-CMD ["/bin/bash","/run_gotty.sh"]
+CMD ["/bin/bash","run_gotty.sh"]
