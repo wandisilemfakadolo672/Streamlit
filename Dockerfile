@@ -18,7 +18,7 @@ RUN apt-get -y update && \
 
 
 
-RUN chmod 744 /run_gotty.sh
+RUN chmod 744 /app/run_gotty.sh
 
 EXPOSE 8080
 
