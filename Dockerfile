@@ -4,8 +4,9 @@ LABEL maintainer="wingnut0310 <wingnut0310@gmail.com>"
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV GOTTY_TAG_VER v1.0.1
+RUN mkdir -p /app
 WORKDIR /app
-COPY run_gotty.sh .
+COPY app ./
 
 RUN apt-get -y update && \
     apt-get install -y curl && \
@@ -18,7 +19,7 @@ RUN apt-get -y update && \
 
 
 
-RUN chmod 744 /app/run_gotty.sh
+RUN chmod 744 run_gotty.sh
 
 EXPOSE 8080
 
