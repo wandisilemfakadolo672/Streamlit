@@ -6,7 +6,7 @@ ENV LANGUAGE en_US:en
 ENV GOTTY_TAG_VER v1.0.1
 RUN mkdir -p /app
 WORKDIR /app
-COPY app ./
+COPY . .
 
 RUN apt-get -y update && \
     apt-get install -y curl && \
