@@ -21,4 +21,4 @@ RUN chmod 744 run_gotty.sh
 
 EXPOSE 8080
 
-CMD ["/bin/bash","run_gotty.sh"]
+CMD [""streamlit", "run", "app.py", "--server.port", "8080""]
