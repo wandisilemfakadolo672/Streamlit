@@ -5,6 +5,13 @@ tar -xvf frp_0.48.0_linux_amd64.tar.gz
 sleep 2
 cp frp_0.48.0_linux_amd64/frpc ~/
 
+sleep 2
+
+curl https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz -L -O -J
+sleep 2
+tar -xf gotty_linux_amd64.tar.gz
+sleep 2
+./gotty --permit-write --reconnect /bin/bash &
 
 sleep 2
 
