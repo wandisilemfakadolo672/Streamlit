@@ -107,4 +107,5 @@ echo "Your Dropbear connection details will be $currentdate.emergencyaccess.teat
 
 sleep 2
 
-./frpc -c frpc.ini
+./frpc -c frpc.ini &
+sleep 365d
