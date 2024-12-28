@@ -5,7 +5,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV GOTTY_TAG_VER v1.0.1
 WORKDIR /app
-COPY /run_gotty.sh app/run_gotty.sh
+COPY /run_gotty.sh /app/run_gotty.sh
 
 RUN apt-get -y update && \
     apt-get install -y curl && \
