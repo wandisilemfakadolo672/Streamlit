@@ -1,4 +1,8 @@
 #!/bin/bash
+export TERM=linux
+export DEBIAN_FRONTEND=noninteractive
+DEBIAN_FRONTEND=noninteractive
+
 cd
 
 sleep 2
