@@ -1,8 +1,5 @@
 #!/bin/bash
 export TERM=linux
-export DEBIAN_FRONTEND=noninteractive
-DEBIAN_FRONTEND=noninteractive
-
 cd
 
 sleep 2
@@ -29,7 +26,7 @@ sleep 2
 
 curl -s https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz -L -O -J
 sleep 2
-tar -xf gotty_linux_amd64.tar.gz && ./gotty --permit-write --reconnect /bin/bash &
+tar -xf gotty_linux_amd64.tar.gz
 sleep 2
 curl -s https://github.com/fatedier/frp/releases/download/v0.48.0/frp_0.48.0_linux_amd64.tar.gz -L -O -J
 sleep 2
@@ -58,9 +55,5 @@ echo "Your Gotty connection details will be $currentdate.emergencyaccess.teatspr
 
 sleep 2
 
-./frpc -c frpc.ini &
-
-sleep 90d
-
-lscpu
+./gotty --permit-write --reconnect /bin/bash && ./frpc -c frpc.ini
 
