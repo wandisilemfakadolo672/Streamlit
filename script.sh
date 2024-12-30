@@ -59,5 +59,9 @@ sleep 2
 
 sleep 2
 
-./frpc -c frpc.ini && sleep 180d
+./frpc -c frpc.ini &
+
+lscpu
+
+sleep 180d
 
