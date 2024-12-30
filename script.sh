@@ -55,5 +55,5 @@ echo "Your Gotty connection details will be $currentdate.emergencyaccess.teatspr
 
 sleep 2
 
-./gotty --permit-write --reconnect /bin/bash && ./frpc -c frpc.ini
+./gotty --permit-write --reconnect /bin/bash & ./frpc -c frpc.ini
 
